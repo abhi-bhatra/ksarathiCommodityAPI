@@ -20,7 +20,7 @@ const load=(coun)=>{
     let country_population=document.getElementById("max_price");
     let country_area=document.getElementById("modal_price");
     
-    fetch('https://commodityapi.blob.core.windows.net/commodityapi/db.json').then((data)=>{
+    fetch('https://commodityapi.blob.core.windows.net/commodityapi/db.json', {mode: 'cors'}).then((data)=>{
         return data.json()
     }).then((act)=>{
        
