@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import json
 import requests
+import os
 
 url='https://commodityapi.blob.core.windows.net/commodityapi/db.json'
 r = requests.get(url)
@@ -25,4 +26,5 @@ def hello():
             # return 'Hello %s %s have fun learning python <br/> <a href="/">Back Home</a>' % (first_name, last_name)
 
 if __name__ == '__main__':
-    app.run(port = 5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=True,host='0.0.0.0',port=port)
