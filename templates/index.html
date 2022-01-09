@@ -1,22 +1,113 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="static/style.css">
-        <title>
-            Commodity API
-        </title>
-    </head>
-    <body>
-        <h3>
-            Price Market
-        </h3>
-        <p>
-            <form action="/commodity" method="post">
-                State: <input type="text" name="state">  <br />
-                District: <input type="text" name="district" />
-                Commodity: <input type="text" name="commodity" />
-                <input type="submit" name= "form" value="Submit" />
-            </form>
-        </p>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <title>
+        Commodity API
+    </title>
+    <meta name="description" content="" />
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div id="root">
+        <div>
+            <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="#page-top">Krashak Sarathi Dashboard</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class><a href="https://ksarathi.azurewebsites.net/" class="page-scroll">About</a></li>
+                            <li><a href="#" class="page-scroll">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <header id="header">
+                <div class="intro">
+                    <div class="overlay">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2 intro-text">
+                                    <h1>"We are Faming Mates"
+                                    <span></span>
+                                    </h1>
+                                    <p>
+                                        "Sit back and Relax."
+                                    </p>
+                                    <a href="#contact" class="btn btn-custom btn-lg page-scroll">Fill Form</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div>
+                <div id="contact">
+                    <div class="container">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="section-title">
+                                    <h2>"Price Market"</h2>
+                                    <p>"Please fill out the details to get the detail"</p>
+                                </div>
+                                <form action="/commodity" method="post">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" name="state" class="form-control" placeholder="State *" required="required" />
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" name="district" class="form-control" placeholder="District *" required="required" />
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" name="commodity" class="form-control" placeholder="Commodity *" required="required" />
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" name="form" class="btn btn-custom btn-lg">
+                                        Submit
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer">
+                    <div class="container text-center">
+                        <p>
+                            "&copy; Krashak Sarathi Application by"
+                            <a href="#" rel="nofollow">Coding Connoisseurs</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="static/js/jquery.1.11.1.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.js"></script>
     </body>
 </html>

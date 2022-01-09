@@ -21,7 +21,13 @@ def hello():
     commodity = request.form['commodity']
     for i in range(total_length):
         if (state in data[i]['state']) and (district in data[i]['district']) and (commodity in data[i]['commodity']):
-            return 'Maximum Price: %s and Minimum Price: %s <br/> <a href="/">Back Home</a> ' % (data[i]['max_price'], data[i]['min_price'])
+            commodity_list = [
+                {
+                    'max_price': data[i]['max_price'],
+                    'min_price': data[i]['min_price'],
+                }
+            ]
+            return render_template('commodity.html', commodity_list=commodity_list)
             # print("Minimum Price one can get is ", data[i]['min_price'])
             # return 'Hello %s %s have fun learning python <br/> <a href="/">Back Home</a>' % (first_name, last_name)
 
