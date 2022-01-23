@@ -3,7 +3,7 @@ import json
 import requests
 import os
 
-url='https://commodityapi.blob.core.windows.net/commodityapi/db.json'
+url='https://commoditybucket.blob.core.windows.net/commodity-api/db.json'
 r = requests.get(url)
 data = json.loads(r.text)
 total_length = len(data)
