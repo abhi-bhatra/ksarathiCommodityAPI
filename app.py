@@ -14,7 +14,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/commodity', methods=['POST'])
+@app.route('/commodity', methods=['GET','POST'])
 def hello():
     state = request.form['state']
     district = request.form['district']
